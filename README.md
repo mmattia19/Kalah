@@ -1,2 +1,2 @@
 # Kalah
-A fun game
+Kalah is a fun *game*
