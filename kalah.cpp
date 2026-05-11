@@ -5,11 +5,10 @@
 
 void clearConsole()
 {
-#ifdef linux
-    printf("\e[1;1H\e[2J");
-#endif
-#if _WIN32 || __APPLE__
-    system("@cls||clear");
+#if defined(_WIN32) || defined(_WIN64)
+  system("cls");
+#else
+  system("clear");
 #endif
 }
 
